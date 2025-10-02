@@ -1,0 +1,30 @@
+name: Update Contributor Ranking
+
+on:
+  schedule:
+    # 매일 한국 시간 오전 9시에 자동으로 실행
+    - cron: '0 0 * * *'
+  # push 할 때마다 수동으로 실행도 가능하게 함
+  workflow_dispatch:
+
+jobs:
+  update-ranking:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Update contributor ranking
+        uses: ssafy-gumi/github-action-contributors@main
+        with:
+          repo: ${{ github.repository }}
+          token: ${{ secrets.GITHUB_TOKEN }}
+          order: 'commits'
+          image-size: 40
+          columns: 4
+          bots: 'false'
+          file: 'README.md'
+          start-comment: ''
+          end-comment: ''
