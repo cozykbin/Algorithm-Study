@@ -3,7 +3,6 @@
 # 👑 구미 공주들의 하루 한 문제 알고리즘 스터디 💻
 ### Gumi Princesses' 1 Day 1 Algorithm Challenge
 
-[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fcozykbin%2FAlgorithm-Study&count_bg=%23FFC0CB&title_bg=%23555555&icon=github&icon_color=%23E7E7E7&title=WELCOME&edge_flat=false)](https://hits.seeyoufarm.com)
 [![SSAFY 14th GUMI](https://img.shields.io/badge/SSAFY-14%EA%B8%B0%20GUMI-blue?style=flat-square)](https://www.ssafy.com/)
 
 </div>
