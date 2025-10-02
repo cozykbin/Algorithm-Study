@@ -85,6 +85,8 @@
 
 ---
 
+
+
 ### 👸 참여자
 > 스터디에 참여하는 공주님들입니다. (새로운 멤버가 생기면 이어서 추가해주세요!)
 
@@ -92,10 +94,43 @@
   <tr>
     <td align="center">
       <a href="https://github.com/cozykbin">
-        <img src="https://avatars.githubusercontent.com/u/87600308?v=4" width="100px;" alt="cozykbin_profile"/>
+        <img src="https://avatars.githubusercontent.com/u/70093181?v=4" width="100px;" alt="cozykbin_profile"/>
         <br />
         <sub><b>cozykbin</b></sub>
       </a>
     </td>
-    </tr>
-</table>
+    <td align="center">
+      <a href="https://github.com/ByeolNabi">
+        <img src="https://avatars.githubusercontent.com/ByeolNabi?v=4" width="100px;" alt="ByeolNabi_profile"/>
+        <br />
+        <sub><b>ByeolNabi</b></sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/Son-juyeong">
+        <img src="https://avatars.githubusercontent.com/Son-juyeong?v=4" width="100px;" alt="Son-juyeong_profile"/>
+        <br />
+        <sub><b>Son-juyeong</b></sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/TaeHeeLee0">
+        <img src="https://avatars.githubusercontent.com/TaeHeeLee0?v=4" width="100px;" alt="TaeHeeLee0_profile"/>
+        <br />
+        <sub><b>TaeHeeLee0</b></sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/basicprogram">
+        <img src="https://avatars.githubusercontent.com/basicprogram?v=4" width="100px;" alt="basicprogram_profile"/>
+        <br />
+        <sub><b>basicprogram</b></sub>
+      </a>
+    </td>
+
+
+### 🏆 10월의 커밋 랭킹
+
+
+
+
