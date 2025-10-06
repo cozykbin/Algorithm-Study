@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="BOJ_19939_박_터뜨리기"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
