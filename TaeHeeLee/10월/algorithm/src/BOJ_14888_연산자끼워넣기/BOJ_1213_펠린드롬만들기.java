@@ -42,6 +42,7 @@ public class BOJ_1213_펠린드롬만들기 {
             }
         }
         
+        // 홀수인 경우의 수가 1개하면 문자열 가운데에 넣어줘야함
         String ans;
         if (odd == 1) {
             ans = sb.toString() + (char)(num + 'A')+ sb.reverse().toString();
