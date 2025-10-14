@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="BOJ_11725_트리의_부모_찾기"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
