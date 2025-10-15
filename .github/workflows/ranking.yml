@@ -10,21 +10,28 @@ on:
 jobs:
   update-ranking:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
+      # 1. 레포지토리의 모든 커밋 기록을 가져옴
       - name: Checkout repository
         uses: actions/checkout@v3
         with:
           fetch-depth: 0
 
+      # 2. 기여자(contributor) 랭킹을 README.md에 업데이트
       - name: Update contributor ranking
-        uses: ssafy-gumi/github-action-contributors@main
+        # 안정적인 공개 도구로 교체!
+        uses: jaywcjlove/github-action-contributors@main
         with:
-          repo: ${{ github.repository }}
+          # ✅ 이 부분에 본인 레포지토리 정보를 정확히 기입해야 해!
+          owner: 'cozykbin'  # 레포지토리 소유자
+          repo: 'Algorithm-Study' # 레포지토리 이름
           token: ${{ secrets.GITHUB_TOKEN }}
           order: 'commits'
           image-size: 40
           columns: 4
           bots: 'false'
           file: 'README.md'
-          start-comment: ''
-          end-comment: ''
+          # README.md 파일에 아래 주석을 추가해야 그 사이에 랭킹이 표시돼
+          comment: ''
