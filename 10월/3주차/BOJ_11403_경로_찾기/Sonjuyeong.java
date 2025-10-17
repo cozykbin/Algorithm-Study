@@ -1,5 +1,3 @@
-package samsung01;
-
 import java.io.*;
 import java.util.*;
 
@@ -16,13 +14,13 @@ public class Sonjuyeong {
 				arr[i][j] = Integer.parseInt(st.nextToken());
 			}
 		}
-		
+
 		int[][] answer = bfs(n, arr);
-		
+
 		StringBuilder sb = new StringBuilder();
-		
-		for(int i = 0;i<n;i++) {
-			for(int j=0;j<n;j++) {
+
+		for (int i = 0; i < n; i++) {
+			for (int j = 0; j < n; j++) {
 				sb.append(answer[i][j]).append(" ");
 			}
 			sb.append("\n");
@@ -43,7 +41,7 @@ public class Sonjuyeong {
 						result[cur][j] = 1;
 						result[i][j] = 1;
 						if (!visited[i][j]) {
-							visited[i][j]=true;
+							visited[i][j] = true;
 							q.offer(j);
 						}
 					}
