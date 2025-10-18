@@ -34,4 +34,4 @@ jobs:
           bots: 'false'
           file: 'README.md'
           # README.md 파일에 아래 주석을 추가해야 그 사이에 랭킹이 표시
-          comment: '### 🏆 10월의 커밋 랭킹'
+          comment: '&lt;!-- CONTRIBUTION-LIST-START --&gt;&lt;!-- CONTRIBUTION-LIST-END --&gt;'
