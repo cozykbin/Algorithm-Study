@@ -87,13 +87,14 @@
 
 
 ### 👸 참여자
-> 스터디에 참여하는 공주님들입니다.
+> 스터디에 참여하는 공주님들
 
 <table>
   <tr>
     <td align="center">
       <a href="https://github.com/cozykbin">
         <img src="https://avatars.githubusercontent.com/u/70093181?v=4" width="100px;" alt="cozykbin_profile"/>
+        <img src="http://mazandi.herokuapp.com/api?handle=ssm05093&theme=warm"/>
         <br/>
         <sub><b>cozykbin</b></sub>
       </a>
@@ -101,6 +102,7 @@
     <td align="center">
       <a href="https://github.com/ByeolNabi">
         <img src="https://avatars.githubusercontent.com/ByeolNabi?v=4" width="100px;" alt="ByeolNabi_profile"/>
+        <img src="http://mazandi.herokuapp.com/api?handle=narwhal_blast&theme=warm"/>
         <br/>
         <sub><b>ByeolNabi</b></sub>
       </a>
@@ -108,6 +110,7 @@
     <td align="center">
       <a href="https://github.com/Son-juyeong">
         <img src="https://avatars.githubusercontent.com/Son-juyeong?v=4" width="100px;" alt="Son-juyeong_profile"/>
+        <img src="http://mazandi.herokuapp.com/api?handle=mongdd31&theme=warm"/>
         <br/>
         <sub><b>Son-juyeong</b></sub>
       </a>
@@ -115,6 +118,7 @@
     <td align="center">
       <a href="https://github.com/TaeHeeLee0">
         <img src="https://avatars.githubusercontent.com/TaeHeeLee0?v=4" width="100px;" alt="TaeHeeLee0_profile"/>
+        <img src="http://mazandi.herokuapp.com/api?handle=k58701&theme=warm"/>
         <br/>
         <sub><b>TaeHeeLee0</b></sub>
       </a>
@@ -122,6 +126,7 @@
     <td align="center">
       <a href="https://github.com/basicprogram">
         <img src="https://avatars.githubusercontent.com/basicprogram?v=4" width="100px;" alt="basicprogram_profile"/>
+        <img src="http://mazandi.herokuapp.com/api?handle=proteak7000&theme=warm"/>
         <br/>
         <sub><b>basicprogram</b></sub>
       </a>
@@ -131,3 +136,6 @@
 
 
 ### 🏆 10월의 커밋 랭킹
+
+<!-- CONTRIBUTION-LIST-START -->
+<!-- CONTRIBUTION-LIST-END -->
