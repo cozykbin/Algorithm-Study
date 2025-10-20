@@ -137,4 +137,5 @@
 
 ### 🏆 10월의 커밋 랭킹
 
-``
+<!-- CONTRIBUTION-LIST-START -->
+<!-- CONTRIBUTION-LIST-END -->
