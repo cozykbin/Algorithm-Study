@@ -132,11 +132,19 @@
         <sub><b>basicprogram</b></sub>
       </a>
     </td>
+    <td align="center">
+      <a href="https://github.com/sondahyun">
+        <img src="https://avatars.githubusercontent.com/sondahyun?v=4" width="100px;" alt="sondahyun_profile"/>
+        <img src="http://mazandi.herokuapp.com/api?handle=sonda3775&theme=warm"/>
+        <br/>
+        <sub><b>sondahyun</b></sub>
+      </a>
+    </td>
     </tr>
 <table>
 
 
-### 🏆 10월의 커밋 랭킹
+<!--### 🏆 10월의 커밋 랭킹 -->
 
 <!-- CONTRIBUTION-LIST-START -->
 <!-- CONTRIBUTION-LIST-END -->
