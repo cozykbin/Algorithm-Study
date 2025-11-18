@@ -1,0 +1,37 @@
+name: Sync to Notion
+
+on:
+  pull_request:
+    types: [closed]
+    branches:
+      - main
+
+jobs:
+  sync-to-notion:
+    if: github.event.pull_request.merged == true
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+        
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+      
+      - name: Install dependencies
+        run: |
+          npm init -y
+          npm install @notionhq/client
+      
+      - name: Sync to Notion
+        env:
+          NOTION_TOKEN: $ secrets.NOTION_TOKEN 
+          STUDY_SCHEDULE_DB_ID: $ secrets.STUDY_SCHEDULE_DB_ID 
+          MEMBER_DB_ID: $ secrets.MEMBER_DB_ID 
+          PR_TITLE: $ github.event.pull_request.title 
+          PR_AUTHOR: $ github.event.pull_request.user.login 
+          PR_URL: $ github.event.pull_request.html_url 
+          MERGED_AT: $ github.event.pull_request.merged_at 
+        run: node scripts/sync-notion.js
