@@ -1,0 +1,60 @@
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.StringTokenizer;
+
+public class Main {
+    public static void main(String[] args) throws Exception{
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+
+        StringTokenizer st = new StringTokenizer(br.readLine());
+        // 55-50+40
+        String temp = st.nextToken();
+
+        boolean flag = temp.contains("-");
+
+        int sum = 0;
+
+        if(flag){
+            String number[] = temp.split("-");
+
+//            sum = Integer.parseInt(number[0]);
+            int i = 0;
+
+            for(String num : number){
+                if(i++ == 0){
+                    String fir[] = num.split("\\+");
+                    for(String s : fir){
+                        sum += Integer.parseInt(s);
+                    }
+                    continue;
+                }
+                String n[] = num.split("\\+");
+
+                if(num.length() < 5 && n.length == 1){ // 1자리 숫자일때만
+                    sum -= Integer.parseInt(num);
+                }else{
+                    String split[] = num.split("\\+");
+                    for(String s : split){
+                        sum -= Integer.parseInt(s);
+                    }
+                }
+            }
+        }else{
+            String split[] = temp.split("\\+");
+            for(String s : split){
+                sum += Integer.parseInt(s);
+            }
+        }
+
+        bw.write(sum + "\n");
+
+        bw.flush();
+        br.close();
+        bw.close();
+    }
+}
