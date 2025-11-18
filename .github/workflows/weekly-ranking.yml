@@ -1,0 +1,33 @@
+# .github/workflows/weekly-ranking.yml
+name: Update Weekly Ranking
+
+on:
+  schedule:
+    - cron: '0 15 * * 0'  # 매주 일요일 00:00 KST 기준 "지난 주" 마감으로 쓰고 싶다면 OK (UTC 기준 일요일 15시)
+  workflow_dispatch:  # 수동 실행 가능
+
+jobs:
+  update-ranking:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0  # 전체 히스토리 가져오기
+        
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+      
+      - name: Install dependencies
+        run: |
+          npm init -y
+          npm install @notionhq/client
+      
+      - name: Update Notion Ranking
+        env:
+          NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
+          MEMBER_DB_ID: ${{ secrets.MEMBER_DB_ID }}
+        run: node scripts/update-ranking.js
