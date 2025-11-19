@@ -125,7 +125,7 @@ public class Solution {
 }
 
 /*
- 
+예시 input
 2
 3
 ..*
